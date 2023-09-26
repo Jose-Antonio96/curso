@@ -54,7 +54,7 @@ public class CursosController {
      * @param duracion la duración del curso
      * @param precio   el precio del curso
      */
-    @PostMapping(value = "curso/add/{curso_id}/")
+    @PostMapping(value = "curso/add/{curso_id}/{name}/{duracion}/{precio}", produces = MediaType.APPLICATION_JSON_VALUE)
     public void agregarCurso(@PathVariable("curso_id") int curso_id,
             @PathVariable("name") String name,
             @PathVariable("duracion") int duracion,
